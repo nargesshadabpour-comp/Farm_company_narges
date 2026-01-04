@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تیم ما - [نام کسب و کار شما]</title>
+    <!-- لینک کردن به فایل CSS برای استایل دهی یکسان -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- هدر و نوار ناوبری (Navigation Bar) -->
+    <header>
+        <div class="logo">
+            <a href="index.html">لوگو</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">خانه</a></li>
+                <li><a href="about.html">درباره ما</a></li>
+                <li><a href="products.html">محصولات</a></li>
+                <li><a href="contact.html">تماس با ما</a></li>
+                <!-- در صورت تمایل، لینک Team را در اینجا اضافه کنید -->
+                <!-- <li><a href="team.html" class="active">تیم ما</a></li> -->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- محتوای اصلی صفحه تیم -->
+    <main>
+        <section id="team-hero">
+            <h1>تیم پشت پرده</h1>
+            <p>ما مجموعه‌ای از متخصصین پرشور هستیم که متعهد به ارائه بهترین خدمات/محصولات به شما هستیم.</p>
+        </section>
+
+        <!-- بخش نمایش اعضای تیم -->
+        <section id="team-members">
+            <h2>افراد کلیدی</h2>
+            
+            <!-- کانتینر برای نمایش اعضای تیم به صورت کارت -->
+            <div class="team-grid">
+                
+                <!-- عضو تیم ۱ (مدیر عامل) -->
+                <div class="team-member-card">
+                    <!-- 
+                        نکته: برای نمایش تصاویر پروفایل به صورت دایره‌ای،
+                        در فایل style.css برای کلاس .team-member-photo باید border-radius: 50%; تنظیم شود.
+                    -->
+                    <img src="images/team_ceo.jpg" alt="نام مدیر عامل" class="team-member-photo">
+                    <h3 class="member-name">علی احمدی</h3>
+                    <p class="member-role">مدیر عامل (CEO)</p>
+                    <p class="member-bio">بیش از ۱۵ سال تجربه در صنعت [صنعت شما]. رهبری و هدایت استراتژیک شرکت.</p>
+                    <div class="social-links">
+                        <a href="#"><img src="icons/linkedin.svg" alt="لینکدین"></a>
+                        <!-- سایر آیکون‌های شبکه‌های اجتماعی -->
+                    </div>
+                </div>
+
+                <!-- عضو تیم ۲ (مدیر فنی) -->
+                <div class="team-member-card">
+                    <img src="images/team_cto.jpg" alt="نام مدیر فنی" class="team-member-photo">
+                    <h3 class="member-name">سارا محمدی</h3>
+                    <p class="member-role">مدیر ارشد فناوری (CTO)</p>
+                    <p class="member-bio">متخصص توسعه نرم‌افزار و معماری سیستم‌های مقیاس‌پذیر.</p>
+                    <div class="social-links">
+                         <a href="#"><img src="icons/linkedin.svg" alt="لینکدین"></a>
+                    </div>
+                </div>
+
+                <!-- عضو تیم ۳ (مدیر بازاریابی) -->
+                <div class="team-member-card">
+                    <img src="images/team_mkt.jpg" alt="نام مدیر بازاریابی" class="team-member-photo">
+                    <h3 class="member-name">رضا کریمی</h3>
+                    <p class="member-role">مدیر بازاریابی</p>
+                    <p class="member-bio">تخصص در کمپین‌های دیجیتال و رشد مشتریان.</p>
+                    <div class="social-links">
+                         <a href="#"><img src="icons/twitter.svg" alt="توییتر"></a>
+                    </div>
+                </div>
+                
+                <!-- می‌توانید کارت‌های بیشتری اضافه کنید -->
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- فوتر (Footer) -->
+    <footer>
+        <p>&copy; ۲۰۲۶ [نام کسب و کار شما]. تمامی حقوق محفوظ است.</p>
+        <div class="footer-links">
+            <a href="#">سیاست حریم خصوصی</a> | 
+            <a href="contact.html">پشتیبانی</a>
+        </div>
+    </footer>
+
+</body>
+</html>

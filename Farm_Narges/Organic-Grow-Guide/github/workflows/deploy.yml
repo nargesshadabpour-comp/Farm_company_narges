@@ -1,0 +1,32 @@
+name: Deploy static site to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main # این Workflow فقط زمانی اجرا می‌شود که به شاخه main پوش کنیم
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4 # کد شما را دانلود می‌کند
+
+      # این مرحله برای سایت‌های استاتیک ساده مثل HTML/CSS معمولاً نیازی به ساخت خاصی ندارد، 
+      # اما برای اطمینان از اینکه فایل‌ها در دسترس هستند:
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      # این مرحله فایل‌های شما را به محیط استقرار (Deployment Environment) منتقل می‌کند
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './' # مسیر فایل‌های شما (ریشه پروژه)
+
+      # این مرحله استقرار نهایی را انجام می‌دهد
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./ # فایل‌ها را از ریشه پروژه منتشر کن

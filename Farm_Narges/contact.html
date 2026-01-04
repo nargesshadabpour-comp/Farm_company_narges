@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تماس با ما - [نام کسب و کار شما]</title>
+    <!-- لینک کردن به فایل CSS برای استایل دهی یکسان -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- هدر و نوار ناوبری (Navigation Bar) - باید مشابه index.html و about.html باشد -->
+    <header>
+        <div class="logo">
+            <a href="index.html">لوگو</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">خانه</a></li>
+                <li><a href="about.html">درباره ما</a></li>
+                <li><a href="products.html">محصولات</a></li>
+                <li><a href="contact.html" class="active">تماس با ما</a></li> <!-- این لینک به صفحه فعلی اشاره دارد -->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- محتوای اصلی صفحه تماس با ما -->
+    <main>
+        <section id="contact-hero">
+            <h1>با ما در تماس باشید</h1>
+            <p>ما اینجا هستیم تا به سؤالات شما پاسخ دهیم. لطفاً از طریق یکی از روش‌های زیر با ما ارتباط برقرار کنید.</p>
+        </section>
+
+        <section id="contact-details">
+            <div class="contact-info-container">
+                <div class="contact-item">
+                    <h3>آدرس دفتر مرکزی:</h3>
+                    <p>[آدرس کامل شما]</p>
+                    <p>شهر، استان، کد پستی</p>
+                </div>
+
+                <div class="contact-item">
+                    <h3>تلفن تماس:</h3>
+                    <p>شماره اصلی: [شماره تلفن 1]</p>
+                    <p>پشتیبانی: [شماره تلفن 2]</p>
+                </div>
+
+                <div class="contact-item">
+                    <h3>ایمیل:</h3>
+                    <p><a href="mailto:info@[yourdomain].com">info@[yourdomain].com</a></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact-form">
+            <h2>ارسال پیام مستقیم</h2>
+            <!-- 
+                توجه: فرم HTML به تنهایی پیام را ارسال نمی‌کند.
+                برای ارسال واقعی نیاز به یک Backend (سرور) یا سرویس‌های واسط (مثل Netlify Forms یا Formspree) دارید.
+                این کد فقط ساختار ظاهر فرم را ایجاد می‌کند.
+            -->
+            <form action="[URL_POST_FORM_HERE]" method="POST">
+                <div class="form-group">
+                    <label for="name">نام و نام خانوادگی:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">ایمیل:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="subject">موضوع پیام:</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">پیام شما:</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                </div>
+                
+                <button type="submit" class="btn-primary">ارسال پیام</button>
+            </form>
+        </section>
+
+        <!-- 
+            می‌توانید یک نقشه جاسازی شده (Embedded Map) در اینجا اضافه کنید.
+            نیاز به کد iframe از Google Maps یا OpenStreetMap خواهید داشت.
+        -->
+        <!-- 
+        <section id="location-map">
+            <h2>موقعیت مکانی ما</h2>
+            <iframe 
+                src="[لینک نقشه جاسازی شده]" 
+                width="100%" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </section>
+        -->
+    </main>
+
+    <!-- فوتر (Footer) - باید مشابه سایر صفحات باشد -->
+    <footer>
+        <p>&copy; ۲۰۲۶ [نام کسب و کار شما]. تمامی حقوق محفوظ است.</p>
+        <div class="footer-links">
+            <a href="#">سیاست حریم خصوصی</a> | 
+            <a href="contact.html">پشتیبانی</a>
+        </div>
+    </footer>
+
+</body>
+</html>
+

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>محصولات ما - [نام کسب و کار شما]</title>
+    <!-- لینک کردن به فایل CSS برای استایل دهی یکسان -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- هدر و نوار ناوبری (Navigation Bar) -->
+    <header>
+        <div class="logo">
+            <a href="index.html">لوگو</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">خانه</a></li>
+                <li><a href="about.html">درباره ما</a></li>
+                <li><a href="products.html" class="active">محصولات</a></li> <!-- این لینک به صفحه فعلی اشاره دارد -->
+                <li><a href="contact.html">تماس با ما</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- محتوای اصلی صفحه محصولات -->
+    <main>
+        <section id="products-hero">
+            <h1>مجموعه کامل محصولات ما</h1>
+            <p>انتخابی از بهترین‌ها، با تضمین کیفیت و اصالت.</p>
+        </section>
+
+        <!-- بخش لیست محصولات -->
+        <section id="product-list">
+            <h2>محصولات برگزیده</h2>
+            
+            <!-- اینجا از یک کانتینر برای محصولات استفاده می‌کنیم. در style.css باید Grid/Flexbox تعریف شود. -->
+            <div class="products-grid">
+                
+                <!-- کارت محصول ۱ -->
+                <div class="product-card">
+                    <!-- فرض کنید تصویر محصول در پوشه /images قرار دارد -->
+                    <img src="images/product1.jpg" alt="نام محصول ۱" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">محصول درجه یک الف</h3>
+                        <p class="product-description">توضیحات کوتاه در مورد ویژگی‌های اصلی این محصول.</p>
+                        <div class="product-price">
+                            <span>۱,۵۰۰,۰۰۰ تومان</span>
+                        </div>
+                        <a href="product-detail-1.html" class="btn-view-detail">مشاهده جزئیات</a>
+                    </div>
+                </div>
+
+                <!-- کارت محصول ۲ -->
+                <div class="product-card">
+                    <img src="images/product2.jpg" alt="نام محصول ۲" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">محصول ویژه ب</h3>
+                        <p class="product-description">بهترین گزینه برای استفاده روزمره با ماندگاری بالا.</p>
+                        <div class="product-price">
+                            <span>۸۰۰,۰۰۰ تومان</span>
+                        </div>
+                        <a href="product-detail-2.html" class="btn-view-detail">مشاهده جزئیات</a>
+                    </div>
+                </div>
+
+                <!-- کارت محصول ۳ -->
+                <div class="product-card">
+                    <img src="images/product3.jpg" alt="نام محصول ۳" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name">مدل اقتصادی ج</h3>
+                        <p class="product-description">کیفیت عالی با قیمتی رقابتی در بازار.</p>
+                        <div class="product-price">
+                            <span>۴۵۰,۰۰۰ تومان</span>
+                        </div>
+                        <a href="product-detail-3.html" class="btn-view-detail">مشاهده جزئیات</a>
+                    </div>
+                </div>
+                
+                <!-- می‌توانید کارت‌های بیشتری را به همین شکل اضافه کنید -->
+                
+            </div>
+        </section>
+    </main>
+
+    <!-- فوتر (Footer) -->
+    <footer>
+        <p>&copy; ۲۰۲۶ [نام کسب و کار شما]. تمامی حقوق محفوظ است.</p>
+        <div class="footer-links">
+            <a href="#">سیاست حریم خصوصی</a> | 
+            <a href="contact.html">پشتیبانی</a>
+        </div>
+    </footer>
+
+</body>
+</html>
+
